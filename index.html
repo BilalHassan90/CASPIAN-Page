@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>O2DTD Dataset</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css"/>
+
+<!-- Font Google -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+ 
+        /* Set display to none for image*/
+        #nonhomeimage {
+            display: none;
+        }
+    </style>
+
+</head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container"> <a class="navbar-brand navbar-logo" href="#"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link" href="" data-scroll-nav="0">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Overview</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Features</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Description</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="4">Sample Data</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Download</a> </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar --> 
+
+<!-- Banner Image -->
+
+<div class="banner text-center" data-scroll-index='0'>
+  <div class="banner-overlay">
+    <div class="container">
+      <h1 class="text-capitalize"><b>O2DTD:</b> <b>O</b>ff-road <b>O</b>pen <b>D</b>esert <b>T</b>rail <b>D</b>etection</h1>
+      <p>A novel dataset for autonomous navigation in arid unstructured environments</p>
+      <a data-scroll-nav="5" class="banner-btn">Download</a> </div>
+  </div>
+</div>
+
+<!-- End Banner Image --> 
+
+<!-- About -->
+
+<div class="about-us section-padding" data-scroll-index='1'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>O2DTD Dataset Overview</h3>
+        <p>The overarching goal of the O2DTD dataset is to help advance autonomous driving and navigation systems for traversing less focused arid landscapes.</p>
+        <span class="section-title-line"></span> </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <h4>Motivation</h4>
+            <p>Free space detection plays a vital role in autonomous vehicle technology for both perception and navigation. Over the past decade, 
+                it has been established that deep learning-based approaches to free space identification may be reliably applied in the real world. 
+                However, these efforts primarily focused on on-road urban settings, and few algorithms were developed for free space detection in 
+                off-road contexts. Nonetheless, the available off-road datasets and research do not significantly emphasize desert traversability analysis. 
+                Consequently, it is necessary to explore how well self-driving cars perform in harsh unstructured, and arid environments. To this end, 
+                we present a new dataset named Off-Road Open Desert Trail Detection (O2DTD), the first dataset focused on desert free space detection. 
+                The dataset was collected with six different light conditions (dawn, morning, afternoon, sunset, twilight, and night).</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mb-50">
+        <div class="section-img"> <img src="images/Intro.png" alt="" class="img-responsive"/> </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End About --> 
+
+<!-- Services -->
+<div class="services section-padding bg-grey" data-scroll-index='2'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>O2DTD Dataset Features</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-bullhorn"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">First Dataset for Desert Free Space Detection</h4>
+            <p>The O2DTD dataset is the first dataset curated to detect desert trails, promoting the off-road autonomous navigation and driving field.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-map-marked-alt"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Collected in Natural Desert Environment</h4>
+            <p>The O2DTD dataset is collected in Abu Dhabi, United Arab Emirates, in an open desert space at 24°22.5'N latitude and 54°34.5'E longitude.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-clock"></i></div>
+          <div class="icon-text">
+            <h4 class="title-box">Cover Six Different Light Conditions</h4>
+            <p>The O2DTD dataset covers six different light conditions (dawn, morning, afternoon, sunset, twilight, and night) affecting autonomous navigation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-images"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Easy-to-Use Data and Labels Format</h4>
+            <p>All the images and annotations in the O2DTD dataset are stored in PNG format, enabling the researchers to use them for their research easily.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-database"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Over 5,000 Images with Pixel Level Annotations</h4>
+            <p>The O2DTD dataset contains over 5,000 images with pixel-level annotations of three classes (sky, ground, and trail) to train and evaluate the algorithms.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box bg-white text-center">
+          <div class="icon"> <i class="fas fa-cogs"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box">Off-road Desert Trail Segmentation Benchmark</h4>
+            <p>We also present the segmentation benchmark called DTSNet, which is trained using various loss functions, optimizers, and learning rates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Services --> 
+
+<div class="about-us section-padding" data-scroll-index='3'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>O2DTD Dataset Description</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-md-12 mb-30">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+<p>
+We gathered a dataset that includes 5,045 RGB images captured under six distinct lighting conditions: dawn, morning, afternoon, sunset, twilight, 
+and night. These images are categorized into three classes: sky (blue), ground (yellow), and trail (gray) regions. The details of the dataset, 
+including the image count and classes, can be found in the table below.
+</p>
+<br>
+<center>Table I: Summary of the off-road open desert trail detection (O2DTD) dataset 
+</center>
+<table>
+    <tr>
+    <th rowspan="2">Type</th>
+    <th rowspan="2">Images</th>
+    <th colspan="3">Split Ratio</th>
+  </tr>
+  <tr>
+    <th>Train (70%)</th>
+    <th>Validation (10%)</th>
+    <th>Test (20%)</th>
+  </tr>
+  <tr>
+    <td>Dawn</td>
+    <td>813</td>
+    <td>569</td>
+    <td>81</td>
+    <td>163</td>
+  </tr>
+  <tr>
+    <td>Morning</td>
+    <td>865</td>
+    <td>606</td>
+    <td>87</td>
+    <td>172</td>
+  </tr>
+  <tr>
+    <td>Afternoon</td>
+    <td>922</td>
+    <td>645</td>
+    <td>92</td>
+    <td>185</td>
+  </tr>
+    <td>Sunset</td>
+    <td>907</td>
+    <td>635</td>
+    <td>91</td>
+    <td>181</td>
+  </tr>
+  <tr>
+    <td>Twilight</td>
+    <td>694</td>
+    <td>486</td>
+    <td>69</td>
+    <td>139</td>
+  </tr>
+  <tr>
+    <td>Night</td>
+    <td>844</td>
+    <td>591</td>
+    <td>84</td>
+    <td>169</td>
+  </tr>
+    <th>Total</td>
+    <th>5045</td>
+    <th>3532</td>
+    <th>504</td>
+    <th>1009</td>
+  </tr>
+      
+      
+  </table>
+
+
+              
+              
+<p>
+The dataset contains images and corresponding ground truth labels, all saved in PNG format with a resolution of 576 × 768 for convenience. 
+To facilitate model training, validation, and testing, we have randomly divided the dataset based on illumination conditions, allocating 70% 
+for training, 10% for validation, and 20% for testing. Both the images and labels are stored in separate sub-folders within the main directory. 
+Additionally, the ground truth labels are available in two formats: single channel and RGB. For more information on annotations, please refer to Table II.
+</p>
+<br>
+<center>Table II:  Ground truth annotation details for the O2DTD dataset</center>
+
+<table>
+    <tr>
+    <th rowspan="2">Class</th>
+    <th>Single Channel</th>
+    <th>RGB</th>
+  </tr>
+  <tr>
+    <th>Pixel Value</th>
+    <th>Color Palette</th>
+    </tr>
+  <tr>
+    <td>Sky</td>
+    <td>1</td>
+    <td>(147, 196, 227)</td>
+  </tr>
+  <tr>
+    <td>Ground</td>
+    <td>2</td>
+    <td>(247, 223, 188)</td>
+  </tr>
+  <tr>
+    <td>Trail</td>
+    <td>3</td>
+    <td>(177, 162, 142)</td>
+  </tr>
+    
+  </table>      
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- Gallery -->
+<div class="portfolio section-padding bg-grey" data-scroll-index='4'>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 section-title text-center">
+        <h3>Sample Images and Annotations</h3>
+        <p>The O2DTD dataset is collected under six different light conditions, including Dawn, Morning, Afternoon, Sunset, Twilight, and Night.</p>
+        <span class="section-title-line"></span> </div>
+      <div class="filtering text-center mb-30" id="homebutton">
+        <button type="button" data-filter='.dawn' class="active">Dawn</button>    
+        <button type="button" id="MorBtnID" data-filter='.morning'>Morning</button>
+        <button type="button" id="AftBtnID" data-filter='.afternoon'>Afternoon</button>
+        <button type="button" id="SunBtnID" data-filter='.sunset'>Sunset</button>
+        <button type="button" id="TwiBtnID" data-filter='.twilight'>Twilight</button>
+        <button type="button" id="NigBtnID" data-filter='.night'>Night</button>
+      </div>
+      <br>
+      <br>
+      <div class="gallery no-padding col-lg-10 col-sm-10 mx-auto">
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 325.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 518.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 791.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 325L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 518L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 dawn no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img src="images/Dawn 791L.png" alt="image">
+              <div class="overlay-img">
+                <h4>Dawn</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg1" src="images/Morning 125.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn1 = document.getElementById("MorBtnID");
+      const MorImg1 = document.getElementById("MorningImg1"); 
+      MorBtn1.addEventListener("click", () => { 
+         MorImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg2" src="images/Morning 316.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn2 = document.getElementById("MorBtnID");
+      const MorImg2 = document.getElementById("MorningImg2"); 
+      MorBtn2.addEventListener("click", () => { 
+         MorImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg3" src="images/Morning 505.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn3 = document.getElementById("MorBtnID");
+      const MorImg3 = document.getElementById("MorningImg3"); 
+      MorBtn3.addEventListener("click", () => { 
+         MorImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg4" src="images/Morning 125L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn4 = document.getElementById("MorBtnID");
+      const MorImg4 = document.getElementById("MorningImg4"); 
+      MorBtn4.addEventListener("click", () => { 
+         MorImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg5" src="images/Morning 316L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn5 = document.getElementById("MorBtnID");
+      const MorImg5 = document.getElementById("MorningImg5"); 
+      MorBtn5.addEventListener("click", () => { 
+         MorImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 morning no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="MorningImg6" src="images/Morning 505L.png" alt="image" style="display: none;">
+   <script>
+      const MorBtn6 = document.getElementById("MorBtnID");
+      const MorImg6 = document.getElementById("MorningImg6"); 
+      MorBtn6.addEventListener("click", () => { 
+         MorImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Morning</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg1" src="images/Afternoon 029.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn1 = document.getElementById("AftBtnID");
+      const AftImg1 = document.getElementById("AfternoonImg1"); 
+      AftBtn1.addEventListener("click", () => { 
+         AftImg1.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg2" src="images/Afternoon 574.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn2 = document.getElementById("AftBtnID");
+      const AftImg2 = document.getElementById("AfternoonImg2"); 
+      AftBtn2.addEventListener("click", () => { 
+         AftImg2.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg3" src="images/Afternoon 642.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn3 = document.getElementById("AftBtnID");
+      const AftImg3 = document.getElementById("AfternoonImg3"); 
+      AftBtn3.addEventListener("click", () => { 
+         AftImg3.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg4" src="images/Afternoon 029L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn4 = document.getElementById("AftBtnID");
+      const AftImg4 = document.getElementById("AfternoonImg4"); 
+      AftBtn4.addEventListener("click", () => { 
+         AftImg4.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg5" src="images/Afternoon 574L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn5 = document.getElementById("AftBtnID");
+      const AftImg5 = document.getElementById("AfternoonImg5"); 
+      AftBtn5.addEventListener("click", () => { 
+         AftImg5.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+          <div class="col-lg-4 col-sm-6 afternoon no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="AfternoonImg6" src="images/Afternoon 642L.png" alt="image" style="display: none;">
+   <script>
+      const AftBtn6 = document.getElementById("AftBtnID");
+      const AftImg6 = document.getElementById("AfternoonImg6"); 
+      AftBtn6.addEventListener("click", () => { 
+         AftImg6.style.display = "block"; 
+      });
+   </script>
+              <div class="overlay-img">
+                <h4>Afternoon</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>          
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg1" src="images/Sunset 004.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn1 = document.getElementById("SunBtnID");
+      const SunImg1 = document.getElementById("SunsetImg1"); 
+      SunBtn1.addEventListener("click", () => { 
+         SunImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg2" src="images/Sunset 446.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn2 = document.getElementById("SunBtnID");
+      const SunImg2 = document.getElementById("SunsetImg2"); 
+      SunBtn2.addEventListener("click", () => { 
+         SunImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg3" src="images/Sunset 489.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn3 = document.getElementById("SunBtnID");
+      const SunImg3 = document.getElementById("SunsetImg3"); 
+      SunBtn3.addEventListener("click", () => { 
+         SunImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg4" src="images/Sunset 004L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn4 = document.getElementById("SunBtnID");
+      const SunImg4 = document.getElementById("SunsetImg4"); 
+      SunBtn4.addEventListener("click", () => { 
+         SunImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg5" src="images/Sunset 446L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn5 = document.getElementById("SunBtnID");
+      const SunImg5 = document.getElementById("SunsetImg5"); 
+      SunBtn5.addEventListener("click", () => { 
+         SunImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 sunset no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="SunsetImg6" src="images/Sunset 489L.png" alt="image" style="display: none;">
+   <script>
+      const SunBtn6 = document.getElementById("SunBtnID");
+      const SunImg6 = document.getElementById("SunsetImg6"); 
+      SunBtn6.addEventListener("click", () => { 
+         SunImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Sunset</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg1" src="images/Twilight 197.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn1 = document.getElementById("TwiBtnID");
+      const TwiImg1 = document.getElementById("TwilightImg1"); 
+      TwiBtn1.addEventListener("click", () => { 
+         TwiImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg2" src="images/Twilight 251.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn2 = document.getElementById("TwiBtnID");
+      const TwiImg2 = document.getElementById("TwilightImg2"); 
+      TwiBtn2.addEventListener("click", () => { 
+         TwiImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg3" src="images/Twilight 382.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn3 = document.getElementById("TwiBtnID");
+      const TwiImg3 = document.getElementById("TwilightImg3"); 
+      TwiBtn3.addEventListener("click", () => { 
+         TwiImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg4" src="images/Twilight 197L.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn4 = document.getElementById("TwiBtnID");
+      const TwiImg4 = document.getElementById("TwilightImg4"); 
+      TwiBtn4.addEventListener("click", () => { 
+         TwiImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>                 
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg5" src="images/Twilight 251L.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn5 = document.getElementById("TwiBtnID");
+      const TwiImg5 = document.getElementById("TwilightImg5"); 
+      TwiBtn5.addEventListener("click", () => { 
+         TwiImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 twilight no-padding">
+          <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="TwilightImg6" src="images/Twilight 382L.png" alt="image" style="display: none;">
+   <script>
+      const TwiBtn6 = document.getElementById("TwiBtnID");
+      const TwiImg6 = document.getElementById("TwilightImg6"); 
+      TwiBtn6.addEventListener("click", () => { 
+         TwiImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Twilight</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>
+        </div>      
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg1" src="images/Night 631.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn1 = document.getElementById("NigBtnID");
+      const NigImg1 = document.getElementById("NightImg1"); 
+      NigBtn1.addEventListener("click", () => { 
+         NigImg1.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Image 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>    
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg2" src="images/Night 514.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn2 = document.getElementById("NigBtnID");
+      const NigImg2 = document.getElementById("NightImg2"); 
+      NigBtn2.addEventListener("click", () => { 
+         NigImg2.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Image 2</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>        
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg3" src="images/Night 777.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn3 = document.getElementById("NigBtnID");
+      const NigImg3 = document.getElementById("NightImg3"); 
+      NigBtn3.addEventListener("click", () => { 
+         NigImg3.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Image 3</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>            
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg4" src="images/Night 631L.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn4 = document.getElementById("NigBtnID");
+      const NigImg4 = document.getElementById("NightImg4"); 
+      NigBtn4.addEventListener("click", () => { 
+         NigImg4.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Annotation 1</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>    
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg5" src="images/Night 514L.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn5 = document.getElementById("NigBtnID");
+      const NigImg5 = document.getElementById("NightImg5"); 
+      NigBtn5.addEventListener("click", () => { 
+         NigImg5.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Annotation 2</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>        
+        <div class="col-lg-4 col-sm-6 night no-padding">
+            <div class="item-img"> <a class="img-responsive"></a>
+            <div class="part-img"> <img id="NightImg6" src="images/Night 777L.png" alt="image" style="display: none;">
+   <script>
+      const NigBtn6 = document.getElementById("NigBtnID");
+      const NigImg6 = document.getElementById("NightImg6"); 
+      NigBtn6.addEventListener("click", () => { 
+         NigImg6.style.display = "block"; 
+      });
+   </script>
+                <div class="overlay-img">
+                <h4>Night</h4>
+                <h6>Annotation 3</h6>
+              </div>
+            </div>
+          </div>                 
+        </div>             
+</div>        
+</div>     
+</div>
+</div>
+    
+
+<!-- Services -->
+<div class="services section-padding" data-scroll-index='5'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section-title text-center">
+        <h3>Download Center</h3>
+        <span class="section-title-line"></span> </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box2 bg-white text-center">
+          <div class="icon"> <i class="fas fa-cloud-download-alt"></i></div>
+          <div class="icon-text">
+            <h4 class="title-box"><a href="https://drive.google.com/file/d/1A-R5un-S6QiFb4nLzGhCzGB7hdqdrF0-/view?usp=share_link">O2DTD Dataset</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-30">
+        <div class="service-box2 bg-white text-center">
+          <div class="icon"> <i class="fab fa-github"></i> </div>
+          <div class="icon-text">
+            <h4 class="title-box"><a href="https://github.com/BilalHassan90/DTSNet-O2DTD" >Benchmark</a></h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-30">
+        <div class="section-info">
+          <div class="sub-title-paragraph">
+            <h4>Contact</h4>
+            <p>If you have any question, contact us at: bilal.hassan@ku.ac.ae </p>
+          </div>
+        </div>
+      </div>
+        
+          <br>
+          <br>
+          <br>&nbsp
+ </div>
+  </div>
+</div>
+
+<!-- End Services --> 
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- End Contact -->
+<footer class="footer-copy">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+          <p>&copy; Copyright 2023 - <a href = "https://avlab.io/"><strong>AV-lab</strong></a>. All Rights Reserved. 
+              <br> Designed by: <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<!-- owl carousel js --> 
+<script src="js/owl.carousel.min.js"></script> 
+<!-- magnific-popup --> 
+<script src="js/jquery.fancybox.min.js"></script> 
+
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+
+<!-- isotope.pkgd.min js --> 
+<script src="js/isotope.pkgd.min.js"></script> 
+<script>
+  $(window).on("scroll",function () {
+
+      var bodyScroll = $(window).scrollTop(),
+          navbar = $(".navbar");
+
+      if(bodyScroll > 130){
+
+          navbar.addClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+      }else{
+
+          navbar.removeClass("nav-scroll");
+          $('.navbar-logo img').attr('src','images/logo-white.png');
+
+      }
+
+  });
+
+  $(window).on("load",function (){
+
+
+
+var bodyScroll = $(window).scrollTop(),
+navbar = $(".navbar");
+
+if(bodyScroll > 130){
+
+navbar.addClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-black.png');
+
+
+}else{
+
+navbar.removeClass("nav-scroll");
+$('.navbar-logo img').attr('src','images/logo-white.png');
+
+}
+
+/* smooth scroll
+  -------------------------------------------------------*/
+  $.scrollIt({
+
+easing: 'swing',      // the easing function for animation
+scrollTime: 900,       // how long (in ms) the animation takes
+activeClass: 'active', // class given to the active nav element
+onPageChange: null,    // function(pageIndex) that is called when page is changed
+topOffset: -63
+});
+
+/* isotope
+-------------------------------------------------------*/
+var $gallery = $('.gallery').isotope({});
+$('.gallery').isotope({
+
+    // options
+    itemSelector: '.item-img',
+    transitionDuration: '0.5s',
+
+});
+
+
+$(".gallery .single-image").fancybox({
+  'transitionIn'  : 'elastic',
+  'transitionOut' : 'elastic',
+  'speedIn'   : 600,
+  'speedOut'    : 200,
+  'overlayShow' : false
+});
+
+
+/* filter items on button click
+-------------------------------------------------------*/
+$('.filtering').on( 'click', 'button', function() {
+
+    var filterValue = $(this).attr('data-filter');
+
+    $gallery.isotope({ filter: filterValue });
+
+    });
+
+$('.filtering').on( 'click', 'button', function() {
+
+    $(this).addClass('active').siblings().removeClass('active');
+
+});
+
+})
+
+$(function () {
+$( ".cover-bg" ).each(function() {
+    var attr = $(this).attr('data-image-src');
+
+    if (typeof attr !== typeof undefined && attr !== false) {
+      $(this).css('background-image', 'url('+attr+')');
+    }
+
+  });
+
+  /* sections background color from data background
+  -------------------------------------------------------*/
+  $("[data-background-color]").each(function() {
+      $(this).css("background-color", $(this).attr("data-background-color")  );
+  });
+
+
+/* Owl Caroursel testimonial
+  -------------------------------------------------------*/
+  
+  $('.testimonials .owl-carousel').owlCarousel({
+    loop:true,
+    autoplay:true,
+    items:1,
+    margin:30,
+    dots: true,
+    nav: false,
+    
+  });
+
+});
+
+</script>
+</body>
+</html>
